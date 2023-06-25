@@ -19,7 +19,7 @@ function Home() {
   }, []);
 
   const Filter =(event) =>  {
-    setRecords(data.filter( f  => f.first_name.toLowerCase().includes(event.target.value)
+    setRecords(data.filter( f  => f.first_name.toLowerCase().includes(event.target.value.toLowerCase())
       ))
   }
 
